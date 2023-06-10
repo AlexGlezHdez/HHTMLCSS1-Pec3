@@ -1,0 +1,52 @@
+.pie {
+  width: 100%;
+  font-size: 0.75rem;
+  line-height: 1.3rem;
+  color: $color-secundario;
+  background-color: $color-primario;
+
+
+  @media (min-width: $mqMinWidthDesktop) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.contenedor-pie {
+  @extend %contenedor;
+}
+
+.logo {
+  width: 200px;
+  fill: $color-secundario;
+}
+
+.enlace-pie:hover .logo {
+  fill: $color-contraste;
+}
+
+.contenedor-enlaces {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lista-enlaces-pie {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: end;
+
+  @media (min-width: $mqMinWidthTablet) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3em;
+  }
+}
+
+.enlace-pie {
+  @extend %enlace;
+
+  font-size: 1.2rem;
+  color: $color-secundario;
+}

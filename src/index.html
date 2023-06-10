@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <include src="./views/head.html" locals='{ "titulo": "Cultura rural: Valdegeña - Índice"}'></include>
+  <body class="cuerpo_indice">
+    <!--
+    <include src="./views/header.html"></include>
+-->
+    <img
+      srcset="
+        /src/assets/images/portada1-480w.webp   480w,
+        /src/assets/images/portada1-600w.webp   600w,
+        /src/assets/images/portada1-800w.webp   800w,
+        /src/assets/images/portada1-1000w.webp 1000w,
+        /src/assets/images/portada1-1280w.webp 1280w
+      "
+      sizes="(max-width: 480px) 480px, (max-with: 600px) 600px, (max-with: 800px) 800px, (max-with: 1000px) 1000px, 1280px"
+      src="/src/assets/images/portada1-1280w.jpg"
+      alt="Foto de la iglesia de San Lorenzo"
+      class="fondo-portada"
+    />
+    <img
+      srcset="
+        /src/assets/images/portada2-480w.webp   480w,
+        /src/assets/images/portada2-600w.webp   600w,
+        /src/assets/images/portada2-800w.webp   800w,
+        /src/assets/images/portada2-1000w.webp 1000w,
+        /src/assets/images/portada2-1280w.webp 1280w
+      "
+      sizes="(max-width: 480px) 480px, (max-with: 600px) 600px, (max-with: 800px) 800px, (max-with: 1000px) 1000px, 1280px"
+      src="/src/assets/images/portada2-1280w.jpg"
+      alt="Foto aerea de Valdegeña nevada"
+      class="fondo-portada animada"
+    />
+
+    <main class="contenedor-main">
+      <h1 class="titular-indice"><small>Cultura rural:</small>Valdegeña</h1>
+
+      <div class="introduccion">
+        <p class="parrafo">
+          Valdegeña es uno de esos pequeños pueblos pertenecientes a lo que hoy en día se denomina la España vaciada.
+        </p>
+        <p class="parrafo">
+          Y como tantos de estos pueblos casi olvidados, Valdegeña alberga en sus calles un pedazo de la historia y de
+          la cultura de nuestro país que no debe perderse en el tiempo, algo en lo que desde esta página esperamos
+          colaborar a que no suceda.
+        </p>
+        <p><a href="presentacion.html" class="enlace">Seguir leyendo...</a></p>
+      </div>
+    </main>
+
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>

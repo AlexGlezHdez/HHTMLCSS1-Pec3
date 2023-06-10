@@ -1,0 +1,53 @@
+.cabecera {
+  width: 100%;
+  background-color: $color-primario;
+
+
+  @media (min-width: $mqMinWidthDesktop) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.contenedor-header {
+  @extend %contenedor;
+
+  padding: 1rem 0 0 0;
+}
+
+.lista-enlaces-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.enlace-header {
+  @extend %enlace;
+
+  font-size: 1.2rem;
+  color: $color-secundario;
+
+  fill: $color-secundario;
+
+  &:hover {
+    fill: $color-contraste;
+  }
+}
+
+.imagen-skyline {
+  width: 100%;
+  font-family: $font-family-acme;
+}
+
+@mixin texto($f-family: $font-family-acme, $f-size: 1em) {
+  font-family: $f-family;
+  font-size: $f-size;
+}
+
+.texto-skyline {
+  @include texto($f-size: 1.6em);
+}
+
+.texto-skyline-l {
+  @include texto($f-size: 2.2em);
+}

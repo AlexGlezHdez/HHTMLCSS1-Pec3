@@ -1,0 +1,64 @@
+.contenedor-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titular-indice {
+  font-size: 4rem;
+  color: $color-secundario;
+  font-family: $font-family-acme;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px $color-primario;
+}
+
+.titular-indice small {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.introduccion {
+  font-family: $font-family-sans-serif;
+  color: $color-secundario;
+  font-size: 1rem;
+
+  max-width: 600px;
+
+  text-align: left;
+  padding: 1rem;
+  box-shadow: 0 0 15px 10px rgba($color-primario, 0.6);
+  margin: 1rem;
+
+  background-color: rgba($color-primario, 0.6);
+
+  border-radius: 15px;
+}
+
+.fondo-portada {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.animada {
+  clip-path: polygon(0 0, 100% 0,  0 100%, 0 100% );
+
+  animation-name: cambiar-imagen;
+  animation-duration: 20s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes cambiar-imagen {
+  0% {clip-path: polygon(0 0, 0 0,  -10% 100%, -10% 100% );}
+  45% {clip-path: polygon(0 0, 0 0,  -10% 100%, -10% 100% );}
+  50% {clip-path: polygon(0 0, 110% 0,  100% 100%, 0 100% );}
+  95% {clip-path: polygon(0 0, 110% 0,  100% 100%, 0 100% );}
+  100% {clip-path: polygon(110% 0, 110% 0,  100% 100%, 100% 100% );}
+}

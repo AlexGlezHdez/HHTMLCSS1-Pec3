@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <include src="./views/head.html" locals='{ "titulo": "Cultura rural: Valdegeña - Categorías"}'></include>
+  <body>
+    <include src="./views/header.html" locals='{ "class": "-fondo" }'></include>
+
+    <main class="contenedor-main">
+      <article>
+        <h1 class="titular-seccion">Categorías</h1>
+
+        <ul class="listado-categorias">
+          <li class="categoria">
+            <h2 class="titulo-categoria">Datos sobre Valdegeña</h2>
+            <ul class="listado-subcategorias">
+              <li class="subcategoria">
+                <a href="./geografia.html" class="enlace-subcategoria"
+                  ><img
+                    src="./assets/images/destacada-01-mini.jpg"
+                    alt="Imagen a vista de dron de Valdegeña"
+                    class="boliche"
+                  />
+                  Un poco de geografía</a
+                >
+              </li>
+              <li class="subcategoria">
+                <a href="./cultura.html" class="enlace-subcategoria">
+                  <img
+                    src="./assets/images/destacada-02-mini.jpg"
+                    alt="Busto de Avelino con la escula de fondo"
+                    class="boliche"
+                  />La cultura local</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="categoria">
+            <h2 class="titulo-categoria">Figuras destacadas</h2>
+            <ul class="listado-subcategorias">
+              <li class="subcategoria">
+                <a href="avelino.html" class="enlace-subcategoria">
+                  <img src="./assets/images/destacada-03-mini.jpg" alt="Retrato de Avelino Hernández" class="boliche" />
+                  Avelino Hernández Lucas</a
+                >
+              </li>
+              <li class="subcategoria">
+                <a href="moises-isidro.html" class="enlace-subcategoria">
+                  <img src="./assets/images/destacada-04-mini.jpg" alt="Foto de Moisés e Isidro" class="boliche" />
+                  Moises e Isidro: Se veía venir</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="categoria">
+            <h2 class="titulo-categoria">Valdegeña en internet</h2>
+            <ul class="listado-subcategorias">
+              <li class="subcategoria">
+                <a href="galeria-imagenes.html" class="enlace-subcategoria">
+                  <img
+                    src="./assets/images/destacada-05-mini.jpg"
+                    alt="Mosaico de fotos de Valdegeña"
+                    class="boliche"
+                  />Galería de imágenes</a
+                >
+              </li>
+              <li class="subcategoria">
+                <a href="galeria-videos.html" class="enlace-subcategoria">
+                  <img
+                    src="./assets/images/destacada-06-mini.jpg"
+                    alt="Fotograma de un video sobre Valdegeña"
+                    class="boliche"
+                  />Galería de vídeos</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+    </main>
+
+    <include src="./views/footer.html"></include>
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>
