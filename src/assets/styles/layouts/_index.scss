@@ -46,6 +46,8 @@
 }
 
 .animada {
+  //will-change: transform;
+
   clip-path: polygon(0 0, 100% 0,  0 100%, 0 100% );
 
   animation-name: cambiar-imagen;
