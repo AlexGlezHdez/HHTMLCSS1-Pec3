@@ -24,7 +24,6 @@
               src="/src/assets/images/destacada-02-1000w.jpg"
               alt="Busto de Avelino con la escuela de fondo"
               class="imagen-destacada"
-              loading="lazy"
             />
           </picture>
           <figcaption class="etiqueta-multimedia">
@@ -51,15 +50,17 @@
         <figure class="multimedia-mediana">
           <img
             srcset="
-              /src/assets/images/foto_05-480w.webp 480w,
-              /src/assets/images/foto_05-600w.webp 600w,
-              /src/assets/images/foto_05-800w.webp 800w
+              /src/assets/images/foto_05-480w.webp 1x,
+              /src/assets/images/foto_05-600w.webp 1.75x,
+              /src/assets/images/foto_05-800w.webp 2.5x
             "
             sizes="(max-width: 600px) 480px, (max-with: 800px) 600px, 800px"
             src="/src/assets/images/foto_05-800w.jpg"
             alt="Detalle de la fuente de Valdegeña"
             class="imagen-texto"
             loading="lazy"
+            height="450"
+            width="600"
           />
           <figcaption class="etiqueta-multimedia">
             Detalle de la fuente de Valdegeña -
@@ -90,15 +91,17 @@
         <figure class="multimedia-mediana">
           <img
             srcset="
-              /src/assets/images/foto_06-480w.webp 480w,
-              /src/assets/images/foto_06-600w.webp 600w,
-              /src/assets/images/foto_06-800w.webp 800w
+              /src/assets/images/foto_06-480w.webp 1x,
+              /src/assets/images/foto_06-600w.webp 1.75x,
+              /src/assets/images/foto_06-800w.webp 2.5x
             "
             sizes="(max-width: 600px) 480px, (max-with: 800px) 600px, 800px"
             src="/src/assets/images/foto_06-800w.jpg"
             alt="Puerta de la iglesia de Valdegeña"
             class="imagen-texto"
             loading="lazy"
+            height="400"
+            width="600"
           />
           <figcaption class="etiqueta-multimedia">
             Puerta de la iglesia -
@@ -131,15 +134,17 @@
         <figure class="multimedia-mediana">
           <img
             srcset="
-              /src/assets/images/foto_07-480w.webp 480w,
-              /src/assets/images/foto_07-600w.webp 600w,
-              /src/assets/images/foto_07-800w.webp 800w
+              /src/assets/images/foto_07-480w.webp 1x,
+              /src/assets/images/foto_07-600w.webp 1.75x,
+              /src/assets/images/foto_07-800w.webp 2.5x
             "
             sizes="(max-width: 600px) 480px, (max-with: 800px) 600px, 800px"
             src="/src/assets/images/foto_07-800w.jpg"
             alt="Estatua a la boina"
             class="imagen-texto"
             loading="lazy"
+            height="450"
+            width="600"
           />
           <figcaption class="etiqueta-multimedia">
             Estatua a la boina -
@@ -186,7 +191,5 @@
     </main>
 
     <include src="./views/footer.html"></include>
-
-    <!-- <script type="module" src="./assets/scripts/main.js"></script> -->
   </body>
 </html>
