@@ -97,8 +97,10 @@
 .enlace-articulo {
   @extend %enlace;
 
+  display: block;
   color: $color-texto;
   font-style: italic;
-  font-size: 1.2em;
-  padding: 0.5em;
+  font-size: 1.1em;
+  padding: 0.5em 0;
+
 }
