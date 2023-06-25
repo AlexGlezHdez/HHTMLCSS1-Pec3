@@ -20,6 +20,9 @@ function initYouTubeVideos() {
     div.setAttribute("data-id", videoId);
     var thumbNode = document.createElement("img");
     thumbNode.src = "//i.ytimg.com/vi/ID/hqdefault.jpg".replace("ID", videoId);
+    thumbNode.alt = playerElements[n].dataset.alt;
+    thumbNode.height = "480";
+    thumbNode.width = "360";
     div.appendChild(thumbNode);
     var playButton = document.createElement("div");
     playButton.setAttribute("class", "play");
